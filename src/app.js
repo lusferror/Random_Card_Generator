@@ -53,7 +53,7 @@ document.getElementById("cambio").addEventListener("click", () => {
   cambiCarta();
 });
 
-var myVar = window.setInterval(cambiCarta, 10000);
+var myVar = window.setInterval(cambiCarta, 3000);
 
 window.selecionarCarta = function() {
   clearInterval(myVar);
