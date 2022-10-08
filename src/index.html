@@ -13,16 +13,91 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      id="carta"
+      class="col-4 mx-auto border border-5"
+      style="box-shadow: 3px 5px 30px black;"
+    >
+      <div class="row position-relative" style="height: 33%;">
+        <span id="superior" style="font-size:5rem;">
+          ♣
+        </span>
+      </div>
+      <div
+        class="row d-flex justify-content-center"
+        style="height: 33%;font-size:6em;"
+      >
+        <p class="text-center" id="numero"></p>
+      </div>
+      <div
+        class="row position-relative d-flex justify-content-end align-items-end"
+        style="height: 33%"
+      >
+        <span
+          class="d-flex justify-content-end"
+          id="inferior"
+          style="font-size:5rem;"
+        >
+          ♣
+        </span>
+      </div>
+    </div>
+    <div class="row col-3 my-5 mx-auto bg-light rounded-3">
+      <button
+        type="button"
+        class="btn btn-outline-dark fw-bold border-3"
+        id="cambio"
+      >
+        Cambio
+      </button>
+    </div>
+    <div
+      class="row col-9 d-flex justify-content-center mx-auto
+    "
+    >
+      <div class="col-3">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="selectPinta"
+        >
+          <option selected>Pinta</option>
+          <option value="♥">Corazon</option>
+          <option value="♠">Pica</option>
+          <option value="♦">Diamante</option>
+          <option value="♣">Trebol</option>
+        </select>
+      </div>
+      <div class="col-3">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="selectCard"
+        >
+          <option selected>Carta</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+      <div class="col-3 bg-light rounded-3 p-0">
+        <button
+          type="button"
+          class="btn btn-outline-dark fw-bold border-3 w-100"
+          id="seleccionar"
+          onclick="selecionarCarta()"
+        >
+          Seleccionar
+        </button>
       </div>
     </div>
   </body>
